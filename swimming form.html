@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIMMING FORM</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0FF;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #a {
+            font-size: 3rem;
+            color: #0FF;
+            text-align: center;
+            margin: 5vh 0;
+            text-transform: uppercase;
+        }
+
+        #b {
+            font-size: 2rem;
+            color: #0FF;
+            text-align: center;
+            margin: 2vh 0 5vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4vh;
+            margin: 5vh 10vw;
+        }
+
+        .form-section {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 5vh;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #0FF;
+        }
+
+        .form-section h1 {
+            font-size: 2rem;
+            color: #0FF;
+            text-align: center;
+            margin-bottom: 3vh;
+            text-transform: uppercase;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"] {
+            padding: 2vh;
+            border-radius: 15px;
+            border: 2px solid #0FF;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #0FF;
+            font-size: 1.5rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #09F;
+        }
+
+        button {
+            padding: 2vh;
+            border: none;
+            border-radius: 15px;
+            background-color: #09F;
+            color: #0FF;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0FF;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="a">INTER-STATE SWIMMING COMPETITION</h1>
+    <h2 id="b">Venue: Blue Splash Pool, Vizag<br>Timing: 9:00pm<br></h2>
+
+    <div class="container">
+        <div class="form-section">
+            <h1>PERSONAL DETAILS</h1>
+            <form>
+                NAME: <input type="text" placeholder="Enter Your Name"><br>
+                DOB: <input type="date"><br>
+                FATHER'S NAME: <input type="text" placeholder="Enter Your Father's Name"><br>
+                CONTACT: <input type="number" placeholder="Mobile Number"><br>
+                EMAIL: <input type="email" placeholder="Enter Your Email"><br>
+                ADDRESS: <input type="text" placeholder="Enter Your Address"><br>
+                <button type="submit">SUBMIT Your Form</button>
+                <button type="reset">RESET Your Form</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
